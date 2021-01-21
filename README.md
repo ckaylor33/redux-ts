@@ -28,3 +28,9 @@ index.ts (redux stuff)
 - reducers
 - action creators
 - middle-wares
+
+Issues and difficulties working with this project
+
+- Imports between files can turn into a mess very quickly (made sure to import from root idex file inside state directory, not importing directly from other files or folders inside state directory)
+- Communicating types over to the components can be challenging (had to create useTypedSelector folder inside hooks directory)
+- Type def files for Redux, React-redux, and others are possibly over-engineered
